@@ -133,3 +133,32 @@ textarea {
   border-color: #673ab7;
   color: #673ab7;
 }
+
+/* Responsividade */
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Reduzindo a largura do formulário */
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="file"],
+  textarea {
+    width: 100%; /* Fazendo os campos de entrada ocuparem toda a largura */
+  }
+}
+
+/* Estilos para telas menores que 480px */
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 90%; /* Reduzindo ainda mais a largura do formulário */
+  }
+
+  .btn-submit {
+    width: 100%; /* Fazendo o botão de envio ocupar toda a largura */
+    margin-top: 15px; /* Adicionando margem superior */
+  }
+}
